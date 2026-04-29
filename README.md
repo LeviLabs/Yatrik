@@ -14,7 +14,11 @@ The project includes a **Flutter mobile app frontend** and a **FastAPI machine l
 The backend recommends tourist spots using a trained ML model and returns location data such as latitude and longitude for map-based visualization.
 
 ---
+## 📱 App Preview
 
+<p align="center">
+  <img src="assets/mockup.jpg" width="900" alt="Yatrik App Preview">
+</p>
 ## ✨ Features
 
 ### 📱 Flutter App
@@ -171,3 +175,76 @@ APK output path:
 ```txt
 client/build/app/outputs/flutter-apk/app-release.apk
 ```
+## 🗂️ API Reference
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/` | Check backend status |
+| `POST` | `/recommend` | Generate tourist spot recommendations and day-wise itinerary |
+
+---
+
+## 📥 Sample Request
+
+```json
+{
+  "City": "Raipur",
+  "State": "Chhattisgarh",
+  "Days": 4,
+  "Is_Museum": 1,
+  "Is_Nature": 1,
+  "Is_Beach": 0,
+  "Is_History": 1,
+  "Is_Temple": 0,
+  "Is_Wildlife": 0,
+  "Is_Shopping": 0,
+  "Is_Foodie": 0
+}
+```
+
+---
+
+## 📤 Sample Response
+
+```json
+{
+  "success": true,
+  "mode": "city",
+  "place": "Raipur",
+  "days": 4,
+  "spots_found": 20,
+  "itinerary": [
+    {
+      "day": 1,
+      "place_name": "Nandanvan Zoo Raipur",
+      "city": "Raipur",
+      "state": "Chhattisgarh",
+      "lat": 21.21,
+      "lng": 81.65,
+      "ideal_hours": 3.0,
+      "categories": ["Wildlife"]
+    }
+  ]
+}
+```
+## 📜 Scripts
+
+### Flutter App
+
+```bash
+flutter pub get       # Install Flutter dependencies
+flutter run           # Run Flutter app
+flutter build apk     # Build Android APK
+```
+
+### Backend
+
+```bash
+pip install -r requirements.txt                  # Install backend dependencies
+uvicorn app:app --reload                         # Run backend locally
+uvicorn app:app --host 0.0.0.0 --port $PORT      # Render start command
+```
+
+---
+
+> Built for smart and personalized travel planning 🌍
