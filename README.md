@@ -46,12 +46,11 @@ The backend recommends tourist spots using a trained ML model and returns locati
 ---
 ## 📦 Demo APK
 
-Download and try the demo APK:
+Download the Android demo APK:
 
-[Download Yatrik Demo APK](https://github.com/LeviLabs/Yatrik/releases/latest)
+[Download Yatrik APK](app/Yatrik-arm64-v8a-release.apk)
 
-> Note: Internet connection is required.
-> The backend is hosted on Render, so the first request may take some time.
+> Recommended for most modern Android phones using ARM64 architecture.
 
 ---
 
