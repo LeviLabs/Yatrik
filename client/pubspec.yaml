@@ -1,0 +1,59 @@
+name: trip_planner
+description: "Yatrik is a smart India travel planner that recommends tourist spots, creates day-wise itineraries, maps routes, and lets users save or share trip plans easily."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.10
+  http: ^1.6.0
+  fuzzywuzzy: ^0.1.1
+  flutter_dotenv: ^5.2.1
+  google_fonts: ^6.2.1
+
+  # 🔥 Firebase
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.17.5
+
+  # 🔐 Auth Providers
+  google_sign_in: ^6.1.5
+  sign_in_with_apple: ^7.0.1
+
+  # 🎨 UI
+  carousel_slider: ^5.1.2
+  cupertino_icons: ^1.0.8
+  mapbox_maps_flutter: ^2.22.0
+  geolocator: ^12.0.0
+  flutter_map: ^8.3.0
+  latlong2: ^0.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/luggage.png
+    - assets/images/map_pin.png
+    - lib/image/
+    - .env
+    - assets/cities.json

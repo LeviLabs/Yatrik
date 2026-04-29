@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1020891925567",
+    "project_id": "yatrik-baaa3",
+    "storage_bucket": "yatrik-baaa3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020891925567:android:a39f54602dcdaa6b953c8a",
+        "android_client_info": {
+          "package_name": "com.example.trip_planner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020891925567-5e49fkma05s89o84t3omin96khlo8uib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trip_planner",
+            "certificate_hash": "fc14e05040d476d712371193df627f7967692114"
+          }
+        },
+        {
+          "client_id": "1020891925567-jht0lidi6ssr8r6gj64cvpscqcgdctdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf_C4urwXO4G9OZ2su334vLFMyr6tR8gU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020891925567-jht0lidi6ssr8r6gj64cvpscqcgdctdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
