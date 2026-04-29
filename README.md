@@ -1,4 +1,4 @@
-# 🌍 Yatrik
+# 🌍 Yatrik Travel Recommendation System
 
 > An ML-powered travel planning app that recommends tourist destinations and creates personalized trip itineraries.
 > 🔗 Backend: Deployed on Render
